@@ -2,6 +2,7 @@
   <fs-label>Repeat On</fs-label>
   <mat-button-toggle-group
     name="weekdays"
+    [multiple]="true"
     class="weekdays"
     [(ngModel)]="weekdays">
     <mat-button-toggle *ngFor="let weekday of weekdaysList" class="weekday" [value]="weekday">

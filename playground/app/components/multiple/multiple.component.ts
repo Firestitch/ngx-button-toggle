@@ -4,11 +4,11 @@ import { FsExampleComponent } from '@firestitch/example';
 import { FsMessage } from '@firestitch/message';
 
 @Component({
-  selector: 'kitchen-sink',
-  templateUrl: 'kitchen-sink.component.html',
-  styleUrls: ['kitchen-sink.component.scss']
+  selector: 'multiple',
+  templateUrl: 'multiple.component.html',
+  styleUrls: ['multiple.component.scss']
 })
-export class KitchenSinkComponent {
+export class MultipleComponent {
 
   public config = {};
   public weekdays = null;
