@@ -15,8 +15,4 @@ export class MultipleComponent {
 
   public weekdaysList = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
 
-  constructor(private exampleComponent: FsExampleComponent,
-              private message: FsMessage) {
-    exampleComponent.setConfigureComponent(KitchenSinkConfigureComponent, { config: this.config });
-  }
 }
