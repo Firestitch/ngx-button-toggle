@@ -5,8 +5,10 @@
     [multiple]="true"
     class="weekdays"
     [(ngModel)]="weekdays">
-    <mat-button-toggle *ngFor="let weekday of weekdaysList" class="weekday" [value]="weekday">
-      {{weekday}}
-    </mat-button-toggle>
+    @for (weekday of weekdaysList; track weekday) {
+      <mat-button-toggle class="weekday" [value]="weekday">
+        {{weekday}}
+      </mat-button-toggle>
+    }
   </mat-button-toggle-group>
 </fs-label-field>
